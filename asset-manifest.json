@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/URL-shortening-API-landing-page.git/static/css/main.518ce94c.chunk.css",
+    "main.js": "/URL-shortening-API-landing-page.git/static/js/main.b38514bb.chunk.js",
+    "main.js.map": "/URL-shortening-API-landing-page.git/static/js/main.b38514bb.chunk.js.map",
+    "runtime-main.js": "/URL-shortening-API-landing-page.git/static/js/runtime-main.99c66fc0.js",
+    "runtime-main.js.map": "/URL-shortening-API-landing-page.git/static/js/runtime-main.99c66fc0.js.map",
+    "static/js/2.d31b2849.chunk.js": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js",
+    "static/js/2.d31b2849.chunk.js.map": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js.map",
+    "index.html": "/URL-shortening-API-landing-page.git/index.html",
+    "static/css/main.518ce94c.chunk.css.map": "/URL-shortening-API-landing-page.git/static/css/main.518ce94c.chunk.css.map",
+    "static/js/2.d31b2849.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.99c66fc0.js",
+    "static/js/2.d31b2849.chunk.js",
+    "static/css/main.518ce94c.chunk.css",
+    "static/js/main.b38514bb.chunk.js"
+  ]
+}
