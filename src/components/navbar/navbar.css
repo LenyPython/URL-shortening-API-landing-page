@@ -1,0 +1,24 @@
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar div {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+#navbar div * {
+  margin-right: 35px;
+}
+#navbar div h2 {
+  font-size: 26px;
+}
+#navbar button {
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=navbar.css.map */
