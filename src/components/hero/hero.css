@@ -1,0 +1,33 @@
+#hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 300px;
+  margin: 50px;
+  position: relative;
+}
+#hero img {
+  position: absolute;
+  width: 55%;
+  right: 0;
+  transform: translateX(30%);
+}
+#hero div {
+  width: 50%;
+}
+#hero div h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 5px;
+  line-height: 1.1;
+}
+#hero div p {
+  width: 90%;
+  margin: 0 0 20px;
+  font-size: 16px;
+}
+#hero button {
+  border-radius: 25px;
+}
+
+/*# sourceMappingURL=hero.css.map */

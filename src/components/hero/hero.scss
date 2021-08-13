@@ -1,0 +1,31 @@
+#hero{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	min-height: 300px;
+	margin: 50px;
+	position: relative;
+	img {
+		position: absolute;
+		width: 55%;
+		right: 0;
+		transform: translateX(30%);
+	} 
+	div {
+		width: 50%;
+		h1 {
+			font-size: 55px;
+			font-weight: 700;
+			margin: 5px;
+			line-height: 1.1;
+		}
+		p {
+			width: 90%;
+			margin: 0 0 20px;
+			font-size: 16px;
+		}
+	}
+	button {
+		border-radius: 25px;
+	}
+}

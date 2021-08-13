@@ -1,0 +1,28 @@
+#shortener {
+	--height: 40px;
+	--radius: 5px;
+	margin: 30px;
+	width: 100%;
+	background: url('../../images/bg-shorten-desktop.svg')var(--primary-dark-violet);
+	height: 168px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	textarea {
+		box-sizing: border-box;
+		width: 75%;
+		height: var(--height);
+		border: none;
+		border-radius: var(--radius);
+		resize: none;
+		color: var(--neutral-grayish);
+		font-size: 18px;
+		margin: 15px;
+		padding: 10px 30px 0 30px;
+	}
+
+	button {
+		border-radius: var(--radius);
+		height: var(--height);
+	}
+}

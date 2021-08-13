@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--neutral-very-dark-violet);
+  color: var(--neutral-very-dark-blue);
 }
 
 button {
@@ -26,6 +26,7 @@ button {
   border: none;
   padding: 10px 25px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .App {
@@ -34,6 +35,7 @@ button {
   align-items: center;
   margin: auto;
   width: 80vw;
+  max-width: 1100px;
 }
 
 /*# sourceMappingURL=App.css.map */
