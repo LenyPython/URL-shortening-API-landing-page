@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/URL-shortening-API-landing-page.git/static/css/main.6baabfe6.chunk.css",
-    "main.js": "/URL-shortening-API-landing-page.git/static/js/main.d43ed7b0.chunk.js",
-    "main.js.map": "/URL-shortening-API-landing-page.git/static/js/main.d43ed7b0.chunk.js.map",
-    "runtime-main.js": "/URL-shortening-API-landing-page.git/static/js/runtime-main.99c66fc0.js",
-    "runtime-main.js.map": "/URL-shortening-API-landing-page.git/static/js/runtime-main.99c66fc0.js.map",
-    "static/js/2.d31b2849.chunk.js": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js",
-    "static/js/2.d31b2849.chunk.js.map": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js.map",
-    "index.html": "/URL-shortening-API-landing-page.git/index.html",
-    "static/css/main.6baabfe6.chunk.css.map": "/URL-shortening-API-landing-page.git/static/css/main.6baabfe6.chunk.css.map",
-    "static/js/2.d31b2849.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page.git/static/js/2.d31b2849.chunk.js.LICENSE.txt",
-    "static/media/short.css": "/URL-shortening-API-landing-page.git/static/media/bg-shorten-desktop.0d9742f4.svg",
-    "static/media/illustration-working.c9b5ef54.svg": "/URL-shortening-API-landing-page.git/static/media/illustration-working.c9b5ef54.svg"
+    "main.css": "/URL-shortening-API-landing-page/static/css/main.ccf300e6.chunk.css",
+    "main.js": "/URL-shortening-API-landing-page/static/js/main.d43ed7b0.chunk.js",
+    "main.js.map": "/URL-shortening-API-landing-page/static/js/main.d43ed7b0.chunk.js.map",
+    "runtime-main.js": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js",
+    "runtime-main.js.map": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js.map",
+    "static/js/2.d31b2849.chunk.js": "/URL-shortening-API-landing-page/static/js/2.d31b2849.chunk.js",
+    "static/js/2.d31b2849.chunk.js.map": "/URL-shortening-API-landing-page/static/js/2.d31b2849.chunk.js.map",
+    "index.html": "/URL-shortening-API-landing-page/index.html",
+    "static/css/main.ccf300e6.chunk.css.map": "/URL-shortening-API-landing-page/static/css/main.ccf300e6.chunk.css.map",
+    "static/js/2.d31b2849.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page/static/js/2.d31b2849.chunk.js.LICENSE.txt",
+    "static/media/short.css": "/URL-shortening-API-landing-page/static/media/bg-shorten-desktop.0d9742f4.svg",
+    "static/media/illustration-working.c9b5ef54.svg": "/URL-shortening-API-landing-page/static/media/illustration-working.c9b5ef54.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.99c66fc0.js",
+    "static/js/runtime-main.2f2df1e8.js",
     "static/js/2.d31b2849.chunk.js",
-    "static/css/main.6baabfe6.chunk.css",
+    "static/css/main.ccf300e6.chunk.css",
     "static/js/main.d43ed7b0.chunk.js"
   ]
 }
