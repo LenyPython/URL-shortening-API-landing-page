@@ -4,22 +4,23 @@
 	justify-content: space-between;
 	align-items: center;
 	div {
-		* {
-			margin-right: 35px;
-		}
-		h2{
-			font-size: 26px;
-		}
 		display: flex;
 		align-items: center;
-		font-size: 12px;
+		font-size: .8rem;
+		p:hover{
+			color: var(--neutral-very-dark-violet);
+			cursor: pointer;
+		}
+		* {
+			margin-right: 3em;
+		}
 	}
 	button{
 		padding: 6px 20px;
 		border-radius: 20px;
 		font-size: 12px;
-		
 	}
-
-
+}
+.menu > svg {
+	fill: var(--neutral-very-dark-blue);
 }

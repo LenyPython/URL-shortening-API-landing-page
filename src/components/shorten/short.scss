@@ -20,6 +20,10 @@
 		font-size: 1em;
 		margin: 1em;
 		padding: 10px 30px 0 30px;
+		&:invalid{
+			border: 2px solid var(--secondary-red);
+			color: var(--secondary-red);
+		}
 	}
 
 	button {

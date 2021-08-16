@@ -2,7 +2,7 @@
 	--primary-cyan: hsl(180,66%,49%);
 	--primary-dark-violet: hsl(257, 27%, 26%);
 
-	--secondary--red: hsl(0, 87%, 67%);
+	--secondary-red: hsl(0, 87%, 67%);
 
 	--neutral-gray: hsl(0, 0%, 75%);
 	--neutral-grayish: hsl(257, 7%, 63%);
@@ -29,6 +29,9 @@ button {
 	padding: 10px 25px;
 	font-weight: 700;
 	cursor: pointer;
+	&:hover {
+		filter: brightness(200%);
+	}
 }
 
 .App {

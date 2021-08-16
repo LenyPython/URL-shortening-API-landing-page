@@ -7,18 +7,23 @@
 #navbar div {
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.8rem;
+}
+#navbar div p:hover {
+  color: var(--neutral-very-dark-violet);
+  cursor: pointer;
 }
 #navbar div * {
-  margin-right: 35px;
-}
-#navbar div h2 {
-  font-size: 26px;
+  margin-right: 3em;
 }
 #navbar button {
   padding: 6px 20px;
   border-radius: 20px;
   font-size: 12px;
+}
+
+.menu > svg {
+  fill: var(--neutral-very-dark-blue);
 }
 
 /*# sourceMappingURL=navbar.css.map */

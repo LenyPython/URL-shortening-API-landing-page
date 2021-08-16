@@ -22,6 +22,10 @@
   margin: 1em;
   padding: 10px 30px 0 30px;
 }
+#shortener textarea:invalid {
+  border: 2px solid var(--secondary-red);
+  color: var(--secondary-red);
+}
 #shortener button {
   border-radius: var(--radius);
   height: var(--height);
