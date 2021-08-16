@@ -17,7 +17,9 @@ const Statistics = () => {
         </div>
         <div className="stats-description">
           <div>
-            <img src={brand} alt='brand img' />
+            <div className="img-wrapper">
+              <img src={brand} alt='brand img' />
+            </div>
             <h3>Brand Recognition</h3>
             <p>
               Boost your brand recognition with each click. Generic links don’t
@@ -25,7 +27,9 @@ const Statistics = () => {
           </p>
           </div>
           <div>
-            <img src={records} alt='recodrs img' />
+            <div className="img-wrapper">
+              <img src={records} alt='recodrs img' />
+            </div>
             <h3>Detailed Records</h3>
             <p>
               Gain insights into who is clicking your links. Knowing when and where
@@ -33,7 +37,9 @@ const Statistics = () => {
           </p>
           </div>
           <div>
-            <img src={custom} alt='custom img' />
+            <div className="img-wrapper">
+              <img src={custom} alt='custom img' />
+            </div>
             <h3>Fully Customizable</h3>
             <p>
               Improve brand awareness and content discoverability through customizable
