@@ -9,6 +9,8 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   min-width: 100vw;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -30,6 +32,10 @@ button {
 }
 
 .App {
+  position: relative;
+  padding-bottom: 500px;
+}
+.App .content {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

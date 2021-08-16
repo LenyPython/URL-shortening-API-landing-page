@@ -1,11 +1,12 @@
 .call-to-action {
   height: 250px;
-  width: 1440px;
+  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background: url("../../../images/bg-boost-desktop.svg") var(--primary-dark-violet);
+  background-size: 100% 100%;
 }
 .call-to-action h2 {
   color: var(--neutral-gray);

@@ -1,11 +1,32 @@
 #footer-nav {
+  padding: 4em 0;
   background: var(--neutral-very-dark-blue);
-  width: 1440px;
+  background-size: 100% 100%;
+  width: 100%;
   display: flex;
+  justify-content: space-around;
 }
-#footer-nav h1 {
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.links h3 {
   color: var(--neutral-gray);
   margin-top: 0;
+}
+.links p {
+  margin: 0.4em;
+  font-size: 0.9rem;
+}
+.links p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.links div svg {
+  margin: 0.8em;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=fn.css.map */

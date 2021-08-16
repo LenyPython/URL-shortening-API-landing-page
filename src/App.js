@@ -10,10 +10,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HeroSection img={imgHero} />
-      <FastShorten />
-      <Statistics />
+      <div className='content'>
+        <Navbar />
+        <HeroSection img={imgHero} />
+        <FastShorten />
+        <Statistics />
+      </div>
       <Footer />
     </div>
   );

@@ -1,9 +1,34 @@
 #footer-nav {
+	padding: 4em 0;
 	background: var(--neutral-very-dark-blue);
-	width: 1440px;
+	background-size: 100% 100%;
+	width: 100%;
 	display: flex;
-	h1 {
+	justify-content: space-around;
+}
+
+.links{
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	h3 {
 		color: var(--neutral-gray);
 		margin-top: 0;
 	}
+	p {
+		margin: .4em;
+		font-size: .9rem;
+		&:hover {
+			cursor: pointer;
+			text-decoration: underline;
+		}
+	}
+	div {
+		svg {
+			margin: .8em;
+			cursor: pointer;
+		}
+
+	}
+
 }
