@@ -1,0 +1,50 @@
+#statistics {
+  background: linear-gradient(0deg, transparent 40%, var(--primary-cyan) 40% 41%, transparent 41%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 500px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.title h2, .title p {
+  margin: 0.2em;
+  text-align: center;
+}
+.title p {
+  font-size: 1rem;
+}
+
+.stats-description {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+}
+.stats-description div:first-child {
+  margin-right: 1em;
+  align-self: flex-start;
+}
+.stats-description div:last-child {
+  margin-left: 1em;
+  align-self: flex-end;
+}
+.stats-description div {
+  background: white;
+  padding: 1em;
+}
+.stats-description div img {
+  background: var(--primary-dark-violet);
+  border-radius: 50%;
+  padding: 0.9em;
+  overflow: visible;
+}
+.stats-description div p {
+  font-size: 1.05rem;
+}
+
+/*# sourceMappingURL=stats.css.map */

@@ -1,7 +1,7 @@
 #shortener {
   --height: 40px;
   --radius: 5px;
-  margin: 30px;
+  margin: 75px;
   width: 100%;
   background: url("../../images/bg-shorten-desktop.svg") var(--primary-dark-violet);
   height: 168px;

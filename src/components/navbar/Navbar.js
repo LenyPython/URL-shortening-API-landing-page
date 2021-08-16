@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../images/logo.svg'
 import './navbar.css'
 
 const Navbar = () => {
@@ -6,7 +7,7 @@ const Navbar = () => {
   return (
     <section id='navbar'>
       <div className="menu">
-        <h2>Shortly</h2>
+        <img src={logo} alt ='logo' />
         <p>Features</p>
         <p>Pricing</p>
         <p>Resources</p>
