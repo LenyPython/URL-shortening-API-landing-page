@@ -1,10 +1,12 @@
 #footer-nav {
   padding: 4em 0;
   background: var(--neutral-very-dark-blue);
-  background-size: 100% 100%;
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+#footer-nav > svg {
+  fill: var(--neutral-gray);
 }
 
 .links {
@@ -22,11 +24,15 @@
 }
 .links p:hover {
   cursor: pointer;
-  text-decoration: underline;
+  color: var(--primary-cyan);
 }
 .links div svg {
   margin: 0.8em;
   cursor: pointer;
+  fill: var(--neutral-gray);
+}
+.links div svg:hover {
+  fill: var(--primary-cyan);
 }
 
 /*# sourceMappingURL=fn.css.map */
