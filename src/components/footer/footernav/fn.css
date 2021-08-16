@@ -1,0 +1,11 @@
+#footer-nav {
+  background: var(--neutral-very-dark-blue);
+  width: 1440px;
+  display: flex;
+}
+#footer-nav h1 {
+  color: var(--neutral-gray);
+  margin-top: 0;
+}
+
+/*# sourceMappingURL=fn.css.map */

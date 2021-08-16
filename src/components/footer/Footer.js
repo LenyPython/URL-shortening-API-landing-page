@@ -1,13 +1,14 @@
 
 import CallToAction from './calltoaction/CallToAction'
 import FooterNav from './footernav/FooterNav'
+import './footer.css'
 
 function Footer() {
   return (
-    <div className="footer">
+    <section id="footer">
       <CallToAction />
       <FooterNav />
-    </div>
+    </section>
   );
 }
 

@@ -1,15 +1,13 @@
-
 import React from 'react'
+import './calltoaction.css'
 
 const CallToAction = () => {
 
   return (
-    <section id="call-to-action">
-      <div>
-        <h2>Boost your links today</h2>
-        <button>Get Started</button>
-      </div>
-    </section>
+    <div className='call-to-action'>
+      <h2>Boost your links today</h2>
+      <button>Get Started</button>
+    </div>
   )
 }
 

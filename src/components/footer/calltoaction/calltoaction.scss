@@ -1,0 +1,16 @@
+.call-to-action {
+	height: 250px;	
+	width: 1440px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	background: url('../../../images/bg-boost-desktop.svg') var(--primary-dark-violet);
+	h2 {
+		color: var(--neutral-gray);
+	}
+	button{
+		border:none;
+		border-radius: 1.5em;
+	}
+}
