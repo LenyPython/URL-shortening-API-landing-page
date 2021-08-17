@@ -4,25 +4,36 @@ import './short.css'
 
 
 const FastShorten = () => {
+  const [links, setLinks] = useState(sessionStorage.links ? JSON.parse(sessionStorage.links) : []);
   const [link, setLink] = useState('Shorten a link here...');
 
+  let prevLinks = links.map((item, idx) => {
+    return <li key={idx}>normal: {item.link}, short:{item.short_link} <button>Click</button></li>
+  })
+
+
   const handleLinkChange = event => setLink(event.target.value)
+
   const handleClick = () => {
-    let url = 'https://api.shrtco.de/v2/shorten?url='
+    let url = 'https://api.shrtco.de/v2/shorten?url=' + link
     getData(url)
   }
+
   const getData = async url => {
-    console.log('connecting')
     try {
+      console.log('connecting')
       let response = await fetch(url + link)
+      console.log('recieved response')
       response = await response.json()
       let data = {
         link: link,
         short_link: response.result.full_short_link
       }
-      console.log('inside:')
-      console.log(data)
-      return data
+      let currentLinks = sessionStorage.links ? JSON.parse(sessionStorage.links) : []
+      if (currentLinks.length >= 4) currentLinks.pop()
+      currentLinks.unshift(data)
+      sessionStorage.links = JSON.stringify(currentLinks)
+      setLinks(currentLinks)
     }
     catch (err) {
       console.log(err)
@@ -41,6 +52,9 @@ const FastShorten = () => {
       >
       </textarea>
       <button htmlFor="link" onClick={handleClick}>Shorten It!</button>
+      <ul>
+        {links.length > 0 ? prevLinks : 'none'}
+      </ul>
     </section>
   )
 }
