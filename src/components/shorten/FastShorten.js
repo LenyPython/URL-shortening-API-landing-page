@@ -41,20 +41,24 @@ const FastShorten = () => {
   }
 
   return (
-    <section id="shortener">
-      <textarea
-        id="linkShortener"
-        name="link"
-        onChange={handleLinkChange}
-        value={link}
-        placeholder='Shorten a link here...'
-        required
-      >
-      </textarea>
-      <button htmlFor="link" onClick={handleClick}>Shorten It!</button>
-      <ul>
-        {links.length > 0 ? prevLinks : 'none'}
-      </ul>
+    <section id="shorten">
+      <div id="shortener">
+        <textarea
+          id="linkShortener"
+          name="link"
+          onChange={handleLinkChange}
+          value={link}
+          placeholder='Shorten a link here...'
+          required
+        >
+        </textarea>
+        <button htmlFor="link" onClick={handleClick}>Shorten It!</button>
+      </div>
+      <div id="results">
+        <ul>
+          {links.length > 0 ? prevLinks : 'none'}
+        </ul>
+      </div>
     </section>
   )
 }
