@@ -45,16 +45,19 @@
   align-items: center;
   padding: 0.5em;
 }
-#results div div > p {
-  margin-right: 1em;
+#results div p {
+  color: var(--neutral-very-dark-violet);
+}
+#results div div p {
   color: var(--primary-cyan);
 }
-#results div div > button {
+#results div div button {
   min-width: 8em;
+  margin-left: 1em;
   height: 3em;
   border-radius: 0.4em;
 }
-#results div div > button.Copied {
+#results div div button.Copied {
   background: var(--primary-dark-violet);
 }
 

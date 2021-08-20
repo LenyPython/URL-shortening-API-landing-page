@@ -10,9 +10,14 @@ const FastShorten = () => {
 
   const handleCopyShortLink = event => {
     let prevCopiedButton = document.querySelector('.Copied')
-    if (prevCopiedButton) prevCopiedButton.classList.remove('Copied')
+    if (prevCopiedButton) {
+      prevCopiedButton.classList.remove('Copied')
+      prevCopiedButton.innerText = 'Copy'
+    }
     event.target.innerText = 'Copied!'
     event.target.classList.add('Copied')
+    let shortLinkCopy = event.target.previousElementSibling.innerText
+    navigator.clipboard.writeText(shortLinkCopy)
   }
 
   const handleLinkChange = event => setLink(event.target.value)
