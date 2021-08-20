@@ -6,6 +6,7 @@ import './short.css'
 const FastShorten = () => {
   const [links, setLinks] = useState(sessionStorage.links ? JSON.parse(sessionStorage.links) : []);
   const [link, setLink] = useState('Shorten a link here...');
+  const [loading, setLoading] = useState(false)
 
 
   const handleCopyShortLink = event => {
@@ -24,31 +25,39 @@ const FastShorten = () => {
 
   const handleClick = async () => {
     let url = 'https://api.shrtco.de/v2/shorten?url=' + link
+    let currentLinks = sessionStorage.links ? JSON.parse(sessionStorage.links) : []
+    if (currentLinks.length >= 3) currentLinks.pop()
+    currentLinks.unshift('waiting')
+    setLinks(currentLinks)
+    setLoading(true)
     try {
-      console.log('connecting')
       let response = await fetch(url)
-      console.log('recieved response')
       response = await response.json()
       let data = {
         link: link,
         short_link: response.result.full_short_link
       }
-      let currentLinks = sessionStorage.links ? JSON.parse(sessionStorage.links) : []
-      if (currentLinks.length >= 3) currentLinks.pop()
-      currentLinks.unshift(data)
+      currentLinks[0] = data
       sessionStorage.links = JSON.stringify(currentLinks)
       setLinks(currentLinks)
+      setLoading(false)
     }
     catch (err) {
+      currentLinks[0] = 'error'
+      setLinks(currentLinks)
+      setLoading(false)
       console.log(err)
     }
   }
 
-  let prevLinks = links.map((item) => {
-    return (<div key={item.link}>
+  let prevLinks = links.map((item, idx) => {
+    let shortLink = (<div key={item.link}>
       <p>{item.link}</p>
       <div><p>{item.short_link}</p><button onClick={handleCopyShortLink}>Copy</button></div>
     </div>)
+
+    if (idx === 0) return loading ? 'Awaiting response...' : shortLink
+    return shortLink
   })
 
   return (
