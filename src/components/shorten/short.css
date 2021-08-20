@@ -4,8 +4,8 @@
 }
 
 #shortener {
-  --height: 40px;
-  --radius: 5px;
+  --height: 3em;
+  --radius: .3em;
   width: 100%;
   background: url("../../images/bg-shorten-desktop.svg") var(--primary-dark-violet);
   background-size: 100% 100%;
@@ -22,17 +22,40 @@
   border-radius: var(--radius);
   resize: none;
   color: var(--neutral-grayish);
-  font-size: 1em;
+  font-size: 1rem;
   margin: 1em;
-  padding: 10px 30px 0 30px;
+  padding: 1em 2em 0;
 }
 #shortener textarea:invalid {
   border: 2px solid var(--secondary-red);
   color: var(--secondary-red);
 }
 #shortener button {
+  font-size: 1rem;
   border-radius: var(--radius);
   height: var(--height);
+}
+
+#results {
+  padding: 0.5em;
+}
+#results div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+#results div div > p {
+  margin-right: 1em;
+  color: var(--primary-cyan);
+}
+#results div div > button {
+  min-width: 8em;
+  height: 3em;
+  border-radius: 0.4em;
+}
+#results div div > button.Copied {
+  background: var(--primary-dark-violet);
 }
 
 /*# sourceMappingURL=short.css.map */
