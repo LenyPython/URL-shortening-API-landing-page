@@ -1,0 +1,26 @@
+#results {
+	padding: .5em;
+	div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: .5em;
+		p {
+			color: var(--neutral-very-dark-violet);
+		}
+		div {
+			p {
+			color: var(--primary-cyan);
+			}
+			button {
+			min-width: 8em;
+			margin-left: 1em;
+			height: 3em;
+			border-radius: .4em;
+		}
+		 button.Copied {
+			background: var(--primary-dark-violet);
+		}
+		}
+	}
+}
