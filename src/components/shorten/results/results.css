@@ -1,11 +1,18 @@
 #results {
   padding: 0.5em;
+  text-align: center;
+}
+#results .error {
+  color: var(--secondary-red);
+}
+#results svg {
+  animation: svg_color 3s infinite;
 }
 #results div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 #results div p {
   color: var(--neutral-very-dark-violet);
@@ -21,6 +28,18 @@
 }
 #results div div button.Copied {
   background: var(--primary-dark-violet);
+}
+
+@keyframes svg_color {
+  0% {
+    fill: var(--primary-cyan);
+  }
+  50% {
+    fill: var(--primary-dark-violet);
+  }
+  100% {
+    fill: var(--primary-cyan);
+  }
 }
 
 /*# sourceMappingURL=results.css.map */

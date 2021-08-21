@@ -1,10 +1,17 @@
 #results {
 	padding: .5em;
+	text-align: center;
+	.error {
+		color: var(--secondary-red);
+	}
+	svg {
+		animation: svg_color 3s infinite;
+	}
 	div {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: .5em;
+		padding: .5em 1em;
 		p {
 			color: var(--neutral-very-dark-violet);
 		}
@@ -22,5 +29,17 @@
 			background: var(--primary-dark-violet);
 		}
 		}
+	}
+}
+
+@keyframes svg_color{
+	0% {
+		fill: var(--primary-cyan);
+	}
+	50% {
+		fill: var(--primary-dark-violet);
+	}
+	100% {
+		fill: var(--primary-cyan);
 	}
 }

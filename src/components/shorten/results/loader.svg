@@ -1,0 +1,22 @@
+<svg width='300px' height='100px' viewBox='0 0 300 100'>
+	<text x='20' y='50'>Loading response</text>
+	<circle cx='200' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+	<circle cx='245' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0.2s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+	<circle cx='290' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0.4s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+
+</svg>
