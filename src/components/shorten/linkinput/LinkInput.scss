@@ -1,5 +1,5 @@
 #shortener {
-	--height: 3em;
+	--height: 2.9em;
 	--radius: .3em;
 	width: 100%;
 	background: url('../../../images/bg-shorten-desktop.svg')var(--primary-dark-violet);
@@ -11,7 +11,7 @@
 	border-radius: .7em;
 	input {
 		box-sizing: border-box;
-		width: 75%;
+		width: 70%;
 		height: var(--height);
 		border: none;
 		border-radius: var(--radius);
@@ -32,17 +32,25 @@
 	}
 }
 
-@media(max-width: 1100px){
+
+@media(max-width: 800px) {
 	#shortener {
+		flex-direction: column;
+		justify-content: space-evenly;
 		input, button {
-			font-size: .8rem;
+			font-size: 1rem;
+			min-width: 200px;
+		}
+		input{
+			width: 85%;
 		}
 	}
 }
-@media(max-width: 900px){
+
+@media(max-width: 600px) {
 	#shortener {
-		input {
-			width: 60%;
+		button {
+			width: 85%;
 		}
 	}
 }
