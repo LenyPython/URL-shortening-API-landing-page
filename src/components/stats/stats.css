@@ -1,19 +1,19 @@
 #statistics {
-  background: linear-gradient(0deg, transparent 40%, var(--primary-cyan) 40% 41%, transparent 41%);
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .title {
-  width: 500px;
+  max-width: 500px;
+  background: white;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   align-items: center;
 }
 .title h2, .title p {
-  margin: 0.2em;
+  margin: 0.3em;
   text-align: center;
 }
 .title h2 {
@@ -24,23 +24,21 @@
 }
 
 .stats-description {
+  background: linear-gradient(0deg, transparent 48%, var(--primary-cyan) 48% 50%, transparent 50%);
   margin: 5em 0;
   display: flex;
   align-items: center;
-  min-height: 400px;
+  min-height: 500px;
 }
 .stats-description .img-wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   background: var(--primary-dark-violet);
   border-radius: 50%;
   padding: 1em;
-}
-.stats-description .img-wrapper img {
-  position: absolute;
-  margin: auto;
-  inset: 0;
 }
 .stats-description div:first-child {
   margin-right: 1em;
@@ -56,6 +54,40 @@
 }
 .stats-description div p {
   font-size: 1.05rem;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    width: 90%;
+  }
+  .title h2 {
+    font-size: 1.7rem;
+  }
+
+  .stats-description {
+    background: linear-gradient(90deg, transparent 49%, var(--primary-cyan) 49% 51%, transparent 51%);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .stats-description div:first-child, .stats-description div:last-child {
+    align-self: unset;
+    margin: unset;
+  }
+  .stats-description div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin: 3em 0;
+    padding: 0;
+  }
+  .stats-description div .img-wrapper {
+    margin: 0 0 2em;
+  }
+  .stats-description div h3, .stats-description div p {
+    margin: 0.4em 0;
+  }
 }
 
 /*# sourceMappingURL=stats.css.map */
