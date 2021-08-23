@@ -16,7 +16,6 @@
   height: var(--height);
   border: none;
   border-radius: var(--radius);
-  resize: none;
   color: var(--neutral-grayish);
   font-size: 1rem;
   margin: 1em;
@@ -30,6 +29,17 @@
   font-size: 1rem;
   border-radius: var(--radius);
   height: var(--height);
+}
+
+@media (max-width: 1100px) {
+  #shortener input, #shortener button {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 900px) {
+  #shortener input {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=link.css.map */

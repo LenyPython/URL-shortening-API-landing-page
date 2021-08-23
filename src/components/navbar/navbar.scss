@@ -6,21 +6,34 @@
 	div {
 		display: flex;
 		align-items: center;
-		font-size: .8rem;
-		p:hover{
+		p {
+		font-size: .9rem;
+		&:hover{
 			color: var(--neutral-very-dark-violet);
 			cursor: pointer;
+		}
 		}
 		* {
 			margin-right: 3em;
 		}
 	}
 	button{
-		padding: 6px 20px;
-		border-radius: 20px;
-		font-size: 12px;
+		padding: .45em 1.4em;
+		border-radius: 1.25em;
+		font-size: .7rem;
 	}
 }
 .menu > svg {
 	fill: var(--neutral-very-dark-blue);
+}
+
+@media(max-width:900px) {
+	#navbar{
+		div{
+			* {
+			margin-right: 1.4em;
+		}
+		}
+	}
+
 }

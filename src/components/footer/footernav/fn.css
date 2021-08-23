@@ -1,7 +1,7 @@
 #footer-nav {
   padding: 4em 0;
-  background: var(--neutral-very-dark-blue);
   width: 100%;
+  max-width: 1400px;
   display: flex;
   justify-content: space-around;
 }
@@ -33,6 +33,12 @@
 }
 .links div svg:hover {
   fill: var(--primary-cyan);
+}
+
+@media (max-width: 1251px) {
+  .links {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=fn.css.map */

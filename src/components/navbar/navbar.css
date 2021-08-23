@@ -7,7 +7,9 @@
 #navbar div {
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+}
+#navbar div p {
+  font-size: 0.9rem;
 }
 #navbar div p:hover {
   color: var(--neutral-very-dark-violet);
@@ -17,13 +19,19 @@
   margin-right: 3em;
 }
 #navbar button {
-  padding: 6px 20px;
-  border-radius: 20px;
-  font-size: 12px;
+  padding: 0.45em 1.4em;
+  border-radius: 1.25em;
+  font-size: 0.7rem;
 }
 
 .menu > svg {
   fill: var(--neutral-very-dark-blue);
+}
+
+@media (max-width: 900px) {
+  #navbar div * {
+    margin-right: 1.4em;
+  }
 }
 
 /*# sourceMappingURL=navbar.css.map */
