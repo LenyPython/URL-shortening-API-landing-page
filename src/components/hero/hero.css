@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   min-height: 300px;
-  margin: 50px;
+  margin: 3.5rem;
   position: relative;
 }
 #hero img {
@@ -16,18 +16,58 @@
   width: 50%;
 }
 #hero div h1 {
-  font-size: 55px;
+  font-size: 3.5rem;
   font-weight: 700;
-  margin: 5px;
+  margin: 0.1em;
   line-height: 1.1;
 }
 #hero div p {
   width: 90%;
-  margin: 0 0 20px;
-  font-size: 16px;
+  margin: 0 0 1.3em;
+  font-size: 1rem;
 }
 #hero button {
-  border-radius: 25px;
+  border-radius: 2em;
+}
+
+@media (max-width: 900px) {
+  #hero {
+    flex-direction: column-reverse;
+    margin: 1em;
+  }
+  #hero img {
+    width: 70%;
+    position: relative;
+    transform: none;
+  }
+  #hero div {
+    text-align: center;
+  }
+  #hero div h1 {
+    font-size: 2.7rem;
+  }
+  #hero div p {
+    width: unset;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 700px) {
+  #hero img {
+    width: 100%;
+  }
+  #hero div {
+    width: 100%;
+  }
+  #hero div h1 {
+    font-size: 2.5rem;
+  }
+  #hero div p {
+    font-size: 1.2rem;
+  }
+  #hero div button {
+    font-size: 1.4rem;
+    padding: 0.6em 1.9em;
+  }
 }
 
 /*# sourceMappingURL=hero.css.map */
