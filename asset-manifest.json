@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/URL-shortening-API-landing-page/static/css/main.382c7ca6.chunk.css",
-    "main.js": "/URL-shortening-API-landing-page/static/js/main.c65ca44d.chunk.js",
-    "main.js.map": "/URL-shortening-API-landing-page/static/js/main.c65ca44d.chunk.js.map",
+    "main.css": "/URL-shortening-API-landing-page/static/css/main.4ebf0b49.chunk.css",
+    "main.js": "/URL-shortening-API-landing-page/static/js/main.48b4fd3f.chunk.js",
+    "main.js.map": "/URL-shortening-API-landing-page/static/js/main.48b4fd3f.chunk.js.map",
     "runtime-main.js": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js",
     "runtime-main.js.map": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js.map",
     "static/js/2.d2176bb0.chunk.js": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js",
     "static/js/2.d2176bb0.chunk.js.map": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js.map",
     "index.html": "/URL-shortening-API-landing-page/index.html",
-    "static/css/main.382c7ca6.chunk.css.map": "/URL-shortening-API-landing-page/static/css/main.382c7ca6.chunk.css.map",
+    "static/css/main.4ebf0b49.chunk.css.map": "/URL-shortening-API-landing-page/static/css/main.4ebf0b49.chunk.css.map",
     "static/js/2.d2176bb0.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js.LICENSE.txt",
-    "static/media/calltoaction.css": "/URL-shortening-API-landing-page/static/media/bg-boost-desktop.772154c9.svg",
+    "static/media/calltoaction.css": "/URL-shortening-API-landing-page/static/media/bg-boost-mobile.4b04bd89.svg",
     "static/media/link.css": "/URL-shortening-API-landing-page/static/media/bg-shorten-desktop.0d9742f4.svg",
     "static/media/icon-brand-recognition.c349d3b6.svg": "/URL-shortening-API-landing-page/static/media/icon-brand-recognition.c349d3b6.svg",
     "static/media/icon-detailed-records.265c8aea.svg": "/URL-shortening-API-landing-page/static/media/icon-detailed-records.265c8aea.svg",
     "static/media/icon-fully-customizable.a1532a74.svg": "/URL-shortening-API-landing-page/static/media/icon-fully-customizable.a1532a74.svg",
     "static/media/illustration-working.c9b5ef54.svg": "/URL-shortening-API-landing-page/static/media/illustration-working.c9b5ef54.svg",
-    "static/media/loader.888f07de.svg": "/URL-shortening-API-landing-page/static/media/loader.888f07de.svg"
+    "static/media/loader.888f07de.svg": "/URL-shortening-API-landing-page/static/media/loader.888f07de.svg",
+    "static/media/memuicon.ace48e51.svg": "/URL-shortening-API-landing-page/static/media/memuicon.ace48e51.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2f2df1e8.js",
     "static/js/2.d2176bb0.chunk.js",
-    "static/css/main.382c7ca6.chunk.css",
-    "static/js/main.c65ca44d.chunk.js"
+    "static/css/main.4ebf0b49.chunk.css",
+    "static/js/main.48b4fd3f.chunk.js"
   ]
 }
