@@ -48,10 +48,4 @@ button:hover {
   min-width: 360px;
 }
 
-@media (max-width: 901px) {
-  body {
-    font-size: 14px;
-  }
-}
-
 /*# sourceMappingURL=App.css.map */

@@ -1,4 +1,5 @@
 #results {
+  display: box-sizing;
   padding: 0.5em;
   text-align: center;
 }
@@ -30,6 +31,25 @@
   background: var(--primary-dark-violet);
 }
 
+@media (max-width: 800px) {
+  #results div {
+    flex-direction: column;
+  }
+  #results div p {
+    margin: 0.7em;
+  }
+  #results div div button {
+    min-width: 15em;
+  }
+}
+@media (max-width: 600px) {
+  #results div div {
+    width: 100%;
+  }
+  #results div div button {
+    width: 100%;
+  }
+}
 @keyframes svg_color {
   0% {
     fill: var(--primary-cyan);
