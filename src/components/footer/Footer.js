@@ -5,10 +5,10 @@ import './footer.css'
 
 function Footer() {
   return (
-    <div id="footer">
+    <footer id="footer">
       <CallToAction />
       <FooterNav />
-    </div>
+    </footer>
   );
 }
 

@@ -11,12 +11,12 @@ const Navbar = () => {
       </svg>
       <div className="menu">
         <div>
-          <a href="#">Features</a>
-          <a href="#">Pricing</a>
-          <a href="#">Resources</a>
+          <a href="#fet">Features</a>
+          <a href="#price">Pricing</a>
+          <a href="#res">Resources</a>
         </div>
         <div className='login'>
-          <a href="#">Login</a>
+          <a href="#login">Login</a>
           <button>Sign Up</button>
         </div>
       </div>

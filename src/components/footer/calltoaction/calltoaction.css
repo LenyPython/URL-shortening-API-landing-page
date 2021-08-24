@@ -12,8 +12,14 @@
   color: var(--neutral-gray);
 }
 .call-to-action button {
-  border: none;
+  font-size: 1.2rem;
   border-radius: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .call-to-action {
+    background-image: url("../../../images/bg-boost-mobile.svg");
+  }
 }
 
 /*# sourceMappingURL=calltoaction.css.map */

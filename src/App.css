@@ -34,10 +34,6 @@ button:hover {
   filter: brightness(300%);
 }
 
-.App {
-  position: relative;
-  padding-bottom: 500px;
-}
 .App .content {
   display: flex;
   flex-flow: column nowrap;
