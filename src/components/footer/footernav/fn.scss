@@ -44,3 +44,24 @@
 		width: 70%;
 	}
 }
+
+@media(max-width:800px) {
+#footer-nav {
+	padding: 2.5em 0 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.links {
+	text-align: center;
+	margin: 2em 0 0;
+	flex-direction: column;
+	justify-content: center;
+	div {
+		margin: .5em auto;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+}
+}
