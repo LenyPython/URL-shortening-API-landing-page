@@ -1,10 +1,11 @@
 #navbar {
+  margin-top: 2em;
   width: 100%;
   display: flex;
   justify-content: stretch;
   align-items: center;
 }
-#navbar svg {
+#navbar svg:first-child {
   margin-right: 2em;
   fill: var(--neutral-very-dark-blue);
 }
@@ -20,15 +21,13 @@
 }
 #navbar .menu div a {
   text-decoration: none;
-  color: var(--neutral-graiysh);
+  margin-right: 2em;
+  color: var(--neutral-grayish);
   font-size: 0.9rem;
 }
 #navbar .menu div a:hover {
   color: var(--neutral-very-dark-violet);
   cursor: pointer;
-}
-#navbar .menu div * {
-  margin-right: 2em;
 }
 #navbar .menu button {
   padding: 0.45em 1.4em;
@@ -36,12 +35,64 @@
   font-size: 0.7rem;
 }
 
+#menu-icon {
+  width: 0;
+  height: 0;
+  fill: var(--neutral-grayish);
+}
+
 @media (max-width: 1000px) {
   #navbar svg {
     margin-right: 1.3em;
+    align-self: flex-start;
   }
-  #navbar .menu div * {
+  #navbar .menu div a {
     margin-right: 1.4em;
+  }
+}
+@media (max-width: 750px) {
+  #navbar {
+    width: 90%;
+  }
+  #navbar .menu {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  #menu-icon {
+    align-self: flex-start;
+    width: 50px;
+    height: 50px;
+  }
+
+  .visible-menu {
+    flex-direction: column;
+    width: 80% !important;
+    height: unset !important;
+    background: var(--primary-dark-violet);
+    border-radius: 0.5em;
+    align-self: flex-end;
+  }
+  .visible-menu div:first-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .visible-menu div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 1.7em;
+  }
+  .visible-menu div a, .visible-menu div button {
+    font-size: 1rem !important;
+    font-weight: 700;
+    color: white !important;
+    margin: 0 0 1.5em !important;
+  }
+  .visible-menu div button {
+    width: 90%;
   }
 }
 
