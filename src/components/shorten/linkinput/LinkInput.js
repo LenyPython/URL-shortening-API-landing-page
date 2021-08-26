@@ -37,15 +37,18 @@ const LinkInput = ({stateControl}) => {
 
   return (
     <div id="shortener">
-      <input
-        id="linkShortener"
-        name="link"
-        type="url"
-        onChange={handleLinkChange}
-        value={link}
-        placeholder='Shorten a link here...'
-        required
-      />
+      <div id="input-wrapper">
+        <input
+          id="linkShortener"
+          name="link"
+          type="text"
+          onChange={handleLinkChange}
+          value={link}
+          placeholder='Shorten a link here...'
+          required
+        />
+        <p>{link ? null : 'Please add a link'}</p>
+      </div>
       <button htmlFor="link" onClick={handleClick}>Shorten It!</button>
     </div>
 

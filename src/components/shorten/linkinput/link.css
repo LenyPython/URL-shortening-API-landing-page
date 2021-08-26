@@ -1,3 +1,15 @@
+#input-wrapper {
+  position: relative;
+  width: 70%;
+  margin-right: 1em;
+}
+#input-wrapper p {
+  position: absolute;
+  color: var(--secondary-red);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 #shortener {
   --height: 2.9em;
   --radius: .3em;
@@ -12,13 +24,13 @@
 }
 #shortener input {
   box-sizing: border-box;
-  width: 70%;
+  width: 100%;
   height: var(--height);
   border: none;
   border-radius: var(--radius);
   color: var(--neutral-grayish);
   font-size: 1rem;
-  margin: 1em;
+  margin: 0;
   padding-left: 1.3em;
 }
 #shortener input:invalid {
@@ -32,6 +44,11 @@
 }
 
 @media (max-width: 800px) {
+  #input-wrapper {
+    width: 85%;
+    margin-right: 0;
+  }
+
   #shortener {
     flex-direction: column;
     justify-content: space-evenly;
@@ -39,9 +56,6 @@
   #shortener input, #shortener button {
     font-size: 1rem;
     min-width: 200px;
-  }
-  #shortener input {
-    width: 85%;
   }
 }
 @media (max-width: 600px) {
