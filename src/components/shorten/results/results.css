@@ -1,7 +1,6 @@
 #results {
   display: box-sizing;
   padding: 0.5em;
-  text-align: center;
 }
 #results .error {
   color: var(--secondary-red);
@@ -13,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 1em;
 }
 #results div p {
   color: var(--neutral-very-dark-violet);
@@ -32,14 +30,22 @@
 }
 
 @media (max-width: 800px) {
+  #results {
+    padding: 0;
+  }
   #results div {
     flex-direction: column;
+    align-items: flex-start;
   }
   #results div p {
     margin: 0.7em;
   }
+  #results div div {
+    align-self: center;
+  }
   #results div div button {
-    min-width: 15em;
+    align-self: center;
+    min-width: 13em;
   }
 }
 @media (max-width: 600px) {
@@ -47,7 +53,8 @@
     width: 100%;
   }
   #results div div button {
-    width: 100%;
+    box-sizing: border-box;
+    width: 95%;
   }
 }
 @keyframes svg_color {

@@ -40,6 +40,7 @@ const LinkInput = ({stateControl}) => {
       <input
         id="linkShortener"
         name="link"
+        type="url"
         onChange={handleLinkChange}
         value={link}
         placeholder='Shorten a link here...'

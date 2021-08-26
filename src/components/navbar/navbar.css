@@ -44,7 +44,6 @@
 @media (max-width: 1000px) {
   #navbar svg {
     margin-right: 1.3em;
-    align-self: flex-start;
   }
   #navbar .menu div a {
     margin-right: 1.4em;
@@ -53,15 +52,22 @@
 @media (max-width: 750px) {
   #navbar {
     width: 90%;
+    flex-direction: column;
   }
   #navbar .menu {
     width: 0;
     height: 0;
     overflow: hidden;
+    transition: all 0.4s;
+  }
+
+  #svgs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   #menu-icon {
-    align-self: flex-start;
     width: 50px;
     height: 50px;
   }
@@ -69,10 +75,10 @@
   .visible-menu {
     flex-direction: column;
     width: 80% !important;
+    min-width: 325px;
     height: unset !important;
     background: var(--primary-dark-violet);
     border-radius: 0.5em;
-    align-self: flex-end;
   }
   .visible-menu div:first-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);

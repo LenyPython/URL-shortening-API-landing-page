@@ -20,7 +20,7 @@ const Results = ({stateControl}) => {
 
 
   let prevLinks = links.map((item, idx) => {
-    if (item === 'error') return <p class="error">Error occured</p>
+    if (item === 'error') return <p className="error">Error occured</p>
     let shortLink = (<div key={item.link}>
       <p>{item.link}</p>
       <div><p>{item.short_link}</p><button onClick={handleCopyShortLink}>Copy</button></div>

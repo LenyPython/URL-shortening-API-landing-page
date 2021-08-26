@@ -47,7 +47,6 @@
 	#navbar{
 		svg {
 			margin-right: 1.3em;
-			align-self: flex-start;
 		}
 		.menu{
 		div {
@@ -61,26 +60,32 @@
 @media(max-width:750px) {
 	#navbar{
 		width: 90%;
+		flex-direction: column;
 		.menu {
 			width: 0;
 			height: 0;
 			overflow: hidden;
+			transition: all .4s;
 	}
 }
+#svgs {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 #menu-icon {
-	align-self: flex-start;
 	width: 50px;
 	height:  50px;
 }
 .visible-menu {
 	flex-direction: column;
 	width: 80% !important;
+	min-width: 325px;
 	height: unset !important;
 	background: var(--primary-dark-violet);
 	border-radius: .5em;
-	align-self: flex-end;
 	div:first-child {
-		border-bottom: 1px solid hsla(0,0,100%,.2);
+		border-bottom: 1px solid hsla(0,0%,100%,.2);
 	}
 	div {
 		width: 90%;
@@ -98,9 +103,6 @@
 		button {
 			width: 90%;
 		}
-		
 	}
-
-
 }
 }

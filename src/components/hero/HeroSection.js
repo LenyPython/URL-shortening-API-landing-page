@@ -11,10 +11,10 @@ const HeroSection = ({img}) => {
         <p>
           Build your brand’s recognition and get detailed insights
           on how your links are performing.
-      </p>
+        </p>
         <button id="hero-btn">Get Started</button>
       </div>
-      <img src={img} alt='illustration' />
+      <img id='illustration' src={img} alt='illustration' />
     </div>
   )
 }

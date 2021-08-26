@@ -51,7 +51,12 @@
     font-size: 0.9rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+  .img-visible {
+    height: 0;
+    margin: 0;
+  }
+
   #hero img {
     width: 100%;
   }
