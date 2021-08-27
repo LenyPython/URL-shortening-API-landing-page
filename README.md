@@ -33,45 +33,97 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - [React](https://reactjs.org/) - JS library
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+- Async/await.
+- SVG graphic animation, adding svg as React components with classes, other svg manipulation.
+- Practiced a lot of RWD( responsive web design).
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<svg width='300px' height='100px' viewBox='0 0 300 100'>
+	<text x='20' y='50'>Loading response</text>
+	<circle cx='200' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+	<circle cx='245' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0.2s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+	<circle cx='290' r='7'>
+		<animate
+		attributeName='cy'
+		values='35;65;35' begin='0.4s' dur='1s'
+		repeatCount='indefinite' />
+	</circle>
+</svg>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+	div {
+		svg {
+			fill: var(--neutral-gray);
+		&:hover {
+			fill: var(--primary-cyan);
+		} }
+
+
+#results {
+	svg {
+		animation: svg_color 3s infinite;
+	}
+}
+@keyframes svg_color{
+	0% {
+		fill: var(--primary-cyan);
+	}
+	50% {
+		fill: var(--primary-dark-violet);
+	}
+	100% {
+		fill: var(--primary-cyan);
+	}
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+const handleClick = async () => {
+	let url = 'https://api.shrtco.de/v2/shorten?url=' + link
+	let currentLinks = sessionStorage.links ? JSON.parse(sessionStorage.links) : []
+	if (currentLinks.length >= 3) currentLinks.pop()
+	currentLinks.unshift('waiting')
+	setLinks(currentLinks)
+	setIsLoading(true)
+	try {
+		let response = await fetch(url)
+		response = await response.json()
+		let data = {
+			link: link,
+			short_link: response.result.full_short_link
+		}
+		currentLinks[0] = data
+		sessionStorage.links = JSON.stringify(currentLinks)
+		setLinks(currentLinks)
+		setIsLoading(false)
+	}
+	catch (err) {
+		currentLinks[0] = 'error'
+		setLinks(currentLinks)
+		setIsLoading(false)
+		console.log(err)
+	}
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-
 
 ## Author
 
 - Website - 404
 - Frontend Mentor - [@LenyPython](https://www.frontendmentor.io/profile/LenyPython)
 
-
-## Acknowledgments
 
 
