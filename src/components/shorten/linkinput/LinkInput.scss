@@ -60,6 +60,8 @@
 
 @media(max-width: 600px) {
 	#shortener {
+		background: url('../../../images/bg-shorten-mobile.svg')var(--primary-dark-violet);
+		background-size: 100% 100%;
 		button {
 			width: 85%;
 		}

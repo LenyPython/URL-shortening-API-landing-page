@@ -49,7 +49,7 @@ const LinkInput = ({stateControl}) => {
         />
         <p>{link ? null : 'Please add a link'}</p>
       </div>
-      <button htmlFor="link" onClick={handleClick}>Shorten It!</button>
+      <button onClick={handleClick}>Shorten It!</button>
     </div>
 
 
