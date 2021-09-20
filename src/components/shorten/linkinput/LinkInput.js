@@ -20,7 +20,7 @@ const LinkInput = ({stateControl}) => {
       response = await response.json()
       let data = {
         link: link,
-        short_link: response.result.full_short_link
+        short_link: response?.result?.full_short_link
       }
       currentLinks[0] = data
       sessionStorage.links = JSON.stringify(currentLinks)
