@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/URL-shortening-API-landing-page/static/css/main.97d72d3d.chunk.css",
-    "main.js": "/URL-shortening-API-landing-page/static/js/main.e5eee298.chunk.js",
-    "main.js.map": "/URL-shortening-API-landing-page/static/js/main.e5eee298.chunk.js.map",
-    "runtime-main.js": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js",
-    "runtime-main.js.map": "/URL-shortening-API-landing-page/static/js/runtime-main.2f2df1e8.js.map",
-    "static/js/2.d2176bb0.chunk.js": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js",
-    "static/js/2.d2176bb0.chunk.js.map": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js.map",
+    "main.js": "/URL-shortening-API-landing-page/static/js/main.d1105955.chunk.js",
+    "main.js.map": "/URL-shortening-API-landing-page/static/js/main.d1105955.chunk.js.map",
+    "runtime-main.js": "/URL-shortening-API-landing-page/static/js/runtime-main.2a59b0a6.js",
+    "runtime-main.js.map": "/URL-shortening-API-landing-page/static/js/runtime-main.2a59b0a6.js.map",
+    "static/js/2.e80e87b2.chunk.js": "/URL-shortening-API-landing-page/static/js/2.e80e87b2.chunk.js",
+    "static/js/2.e80e87b2.chunk.js.map": "/URL-shortening-API-landing-page/static/js/2.e80e87b2.chunk.js.map",
     "index.html": "/URL-shortening-API-landing-page/index.html",
     "static/css/main.97d72d3d.chunk.css.map": "/URL-shortening-API-landing-page/static/css/main.97d72d3d.chunk.css.map",
-    "static/js/2.d2176bb0.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page/static/js/2.d2176bb0.chunk.js.LICENSE.txt",
+    "static/js/2.e80e87b2.chunk.js.LICENSE.txt": "/URL-shortening-API-landing-page/static/js/2.e80e87b2.chunk.js.LICENSE.txt",
     "static/media/calltoaction.css": "/URL-shortening-API-landing-page/static/media/bg-boost-mobile.4b04bd89.svg",
     "static/media/link.css": "/URL-shortening-API-landing-page/static/media/bg-shorten-mobile.41c34b33.svg",
     "static/media/icon-brand-recognition.c349d3b6.svg": "/URL-shortening-API-landing-page/static/media/icon-brand-recognition.c349d3b6.svg",
@@ -20,9 +20,9 @@
     "static/media/memuicon.ace48e51.svg": "/URL-shortening-API-landing-page/static/media/memuicon.ace48e51.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f2df1e8.js",
-    "static/js/2.d2176bb0.chunk.js",
+    "static/js/runtime-main.2a59b0a6.js",
+    "static/js/2.e80e87b2.chunk.js",
     "static/css/main.97d72d3d.chunk.css",
-    "static/js/main.e5eee298.chunk.js"
+    "static/js/main.d1105955.chunk.js"
   ]
 }
